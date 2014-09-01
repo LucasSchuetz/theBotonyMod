@@ -73,26 +73,26 @@ public class ModelPrizeRunner extends ModelBase
       RightLegThigh.mirror = true;
       setRotation(RightLegThigh, 1.396263F, 0F, 0F);
       rightLegTop = new ModelRenderer(this, 40, 16);
-      rightLegTop.addBox(-1F, 0F, -1F, 2, 8, 2);
-      rightLegTop.setRotationPoint(-4F, 15F, 1F);
+      rightLegTop.addBox(-2F, 2F, -1F, 2, 8, 2);
+      rightLegTop.setRotationPoint(-3F, 13F, 1F);
       rightLegTop.setTextureSize(64, 32);
       rightLegTop.mirror = true;
       setRotation(rightLegTop, 0F, 0F, 0F);
       leftLegTop = new ModelRenderer(this, 48, 16);
-      leftLegTop.addBox(-1F, 0F, -1F, 2, 8, 2);
-      leftLegTop.setRotationPoint(4F, 15F, 1F);
+      leftLegTop.addBox(0F, 2F, -1F, 2, 8, 2);
+      leftLegTop.setRotationPoint(3F, 13F, 1F);
       leftLegTop.setTextureSize(64, 32);
       leftLegTop.mirror = true;
       setRotation(leftLegTop, 0F, 0F, 0F);
       leftFoot = new ModelRenderer(this, 2, 10);
-      leftFoot.addBox(-2F, 0F, -3F, 4, 1, 4);
-      leftFoot.setRotationPoint(4F, 23F, 1F);
+      leftFoot.addBox(-1F, 10F, -3F, 4, 1, 4);
+      leftFoot.setRotationPoint(3F, 13F, 1F);
       leftFoot.setTextureSize(64, 32);
       leftFoot.mirror = true;
       setRotation(leftFoot, 0F, 0F, 0F);
       rightFoot = new ModelRenderer(this, 8, 4);
-      rightFoot.addBox(-2F, 0F, -3F, 4, 1, 4);
-      rightFoot.setRotationPoint(-4F, 23F, 1F);
+      rightFoot.addBox(-3F, 10F, -3F, 4, 1, 4);
+      rightFoot.setRotationPoint(-3F, 13F, 1F);
       rightFoot.setTextureSize(64, 32);
       rightFoot.mirror = true;
       setRotation(rightFoot, 0F, 0F, 0F);
@@ -161,24 +161,12 @@ public class ModelPrizeRunner extends ModelBase
   {
     super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
     
-    //Rotations
-    this.leftLegThigh.rotateAngleX = (MathHelper.cos(f * 1.0F) * 1.4F * f1);
-    this.RightLegThigh.rotateAngleX = -(MathHelper.cos(f * 1.0F) * 1.4F * f1);
-    
-    //Offsets
-    
-    
-    //Legs and Feet (under thighs) <-- Offsets and Rotations
-    this.leftLegTop.rotateAngleX = (MathHelper.cos(f * 1.0F) * 2.0F * f1);
-    this.leftLegTop.offsetY = -(MathHelper.cos(f * 1.5F) * 0.2F * f1) - 0.04F;
-    this.leftFoot.rotateAngleX = (MathHelper.cos(f * 1.0F) * 2.0F * f1);
-    this.leftFoot.offsetZ = (MathHelper.cos(f * 1.0F) * 1.0F * f1);
-    this.leftFoot.offsetY = -(MathHelper.sin(f * 2.0F) * 0.175F * f1) - 0.04F;
-    this.rightLegTop.rotateAngleX = -(MathHelper.cos(f * 1.0F) * 2.0F * f1);
-    this.rightLegTop.offsetY = -(MathHelper.cos(f * 2.0F) * 0.2F * f1) - 0.04F;
-    this.rightFoot.rotateAngleX = -(MathHelper.cos(f * 1.0F) * 2.0F * f1);
-    this.rightFoot.offsetZ = -(MathHelper.cos(f * 1.0F) * 1.0F * f1);
-    this.rightFoot.offsetY = -(MathHelper.sin(f * 2.0F) * 0.175F * f1) - 0.04F;
+    //Leg Rotations
+    this.leftLegThigh.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
+    this.leftLegTop.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
+    this.leftFoot.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
+    this.RightLegThigh.rotateAngleX = -(MathHelper.cos(f * 0.6662F) * 1.4F * f1);
+    this.rightLegTop.rotateAngleX = -(MathHelper.cos(f * 0.6662F) * 1.4F * f1);
+    this.rightFoot.rotateAngleX = -(MathHelper.cos(f * 0.6662F) * 1.4F * f1);
   }
-
 }

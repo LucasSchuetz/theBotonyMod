@@ -93,7 +93,7 @@ public class Base
 	//Biomes
 	public static BiomeGenBase blight;
 	
-	/** Blocks **/
+	/* Blocks */
 	public static Block blockFungleDirt;
 	public static Block blockFungleGrass;
 	public static Block blockInfectedLeaf;
@@ -117,7 +117,7 @@ public class Base
 	public static Block blockVibrantBloomBranch;  //   BLOOM
 	public static Block blockVibrantBloomRoot;   //     PARTS
 	
-	/** Items **/
+	/* Items */
 	public static Item itemMobPart;
 	public static Item itemMatter;
 	public static Item itemIncendiarySlimeball;
@@ -139,7 +139,7 @@ public class Base
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent event)
 	{
-		/** Block Init. **/
+		/* Block Init. */
 		blockFungleDirt = new BlockFungleDirt();
 		blockFungleGrass = new BlockFungleGrass();
 		blockInfectedLeaf = new BlockInfectedLeaf();
@@ -162,7 +162,7 @@ public class Base
 		blockVibrantBloomMain = new BlockVibrantBloom();
 		blockVibrantBloomRoot = new BlockVibrantBloomRoot();
 		
-		/** Item Init. **/
+		/* Item Init. */
 		itemMobPart = new ItemMobPart();
 		itemMatter = new ItemMatter();
 		itemIncendiarySlimeball = new ItemIncendiarySlimeball();
