@@ -347,7 +347,7 @@ public class Base
 		@Override
 		public String getTranslatedTabLabel()
 		{
-			return "The Botony Mod";
+			return "Plantology";
 		}
 
 		@Override
