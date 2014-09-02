@@ -31,11 +31,6 @@ public class Crafting
 {
 	public static void addRecipes()
 	{
-		GameRegistry.addShapedRecipe(new ItemStack(Base.itemThornedBranch), new Object[]{
-			"ZXZ",
-			"YXY",
-			"ZXZ",
-			'Z', new ItemStack(Blocks.vine), 'Y', new ItemStack(Blocks.cactus), 'X', new ItemStack(Items.stick)});
 		GameRegistry.addShapedRecipe(new ItemStack(Base.itemVileFlesh), new Object[]{
 			"Z",
 			"Y",
@@ -49,11 +44,11 @@ public class Crafting
 			"XX",
 			"XX",
 			'X', new ItemStack(Base.itemMobPart, 1, 12)});
-		GameRegistry.addShapedRecipe(new ItemStack(Base.itemFangBlade, 2), new Object[]{
+		GameRegistry.addShapedRecipe(new ItemStack(Base.itemFangBlade, 1), new Object[]{
 			"X",
 			"X",
 			"Y",
-			'X', new ItemStack(Base.itemMobPart, 1, 7), 'Y', new ItemStack(Items.stick)});
+			'X', new ItemStack(Base.itemMobPart, 1, 6), 'Y', new ItemStack(Items.stick)});
 		GameRegistry.addShapedRecipe(new ItemStack(Base.blockGemGlass, 2), new Object[]{
 			"XX",
 			"XX",
@@ -89,7 +84,7 @@ public class Crafting
 					GameRegistry.addShapelessRecipe(new ItemStack(Base.itemCompost), new Object[]{
 						new ItemStack(Items.paper), new ItemStack(Items.paper), new ItemStack(Items.paper), 
 						iMobPart, jMobPart, kMobPart, 
-						new ItemStack(Base.itemMobPart, 1, 6), new ItemStack(Base.itemMobPart, 1, 5), new ItemStack(Base.itemMobPart, 1, 6)});
+						new ItemStack(Base.itemMobPart, 1, 5), new ItemStack(Base.itemMobPart, 1, 5), new ItemStack(Base.itemMobPart, 1, 5)});
 				}
 			}
 		}
