@@ -72,15 +72,15 @@ public class HandlerRareDrops
 			}
 		}
 		
-		if(event.entity instanceof EntityGreanBaen)
-		{
-			if(!event.source.getDamageType().equals("fire"))
-			{
-				if(!event.entity.worldObj.isRemote)
-				{
-					event.entity.entityDropItem(new ItemStack(Base.itemMobPart, 1, 10), 0.0F);
-				}
-			}
-		}
+//		if(event.entity instanceof EntityGreanBaen)
+//		{
+//			if(!event.source.getDamageType().equals("fire"))
+//			{
+//				if(!event.entity.worldObj.isRemote)
+//				{
+//					event.entity.entityDropItem(new ItemStack(Base.itemMobPart, 1, 10), 0.0F);
+//				}
+//			}
+//		}
 	}
 }
