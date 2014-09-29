@@ -28,13 +28,13 @@ public class DropHandlersInit
 	public static boolean runicItemsDrop = false;
 	
 	// % Drop Chances
-	public static double zombieArm_CHANCE = 0.05D;
-	public static double cowUtter_CHANCE = 0.02D;
-	public static double creeperMouth_CHANCE = 0.05D;
-	public static double pigSnout_CHANCE = 0.02D;
-	public static double sheepLeg_CHANCE = 0.02D;
-	public static double skeletonRibcage_CHANCE = 0.05D;
-	public static double runicItem_CHANCE = 0.05D;
+	public static double zombieArm_CHANCE = 0.4D;
+	public static double cowUtter_CHANCE = 0.3D;
+	public static double creeperMouth_CHANCE = 0.3D;
+	public static double pigSnout_CHANCE = 0.3D;
+	public static double sheepLeg_CHANCE = 0.4D;
+	public static double skeletonRibcage_CHANCE = 0.3D;
+	public static double runicItem_CHANCE = 0.3D;
 
 	public static void init()
 	{

@@ -43,7 +43,7 @@ public class HandlerRareDrops
 			{
 				if(!event.entity.worldObj.isRemote)
 				{
-					event.entity.entityDropItem(new ItemStack(Base.itemMobPart, 1, 10), 0.0F);
+					event.entity.entityDropItem(new ItemStack(Base.itemMobPart, 1, 9), 0.0F);
 				}
 			}
 		}
@@ -67,7 +67,7 @@ public class HandlerRareDrops
 			{
 				if(!event.entity.worldObj.isRemote)
 				{
-					event.entity.entityDropItem(new ItemStack(Base.itemMobPart, 1, 6), 0.0F);
+					event.entity.entityDropItem(new ItemStack(Base.itemMobPart, 1, 5), 0.0F);
 				}
 			}
 		}
